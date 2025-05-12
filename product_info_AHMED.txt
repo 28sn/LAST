@@ -1,0 +1,8 @@
+Product Information:
+Product Name: دجاج
+Brand: 22
+Ingredients: 
+Energy: 30
+Expiration Date: 2222-02-02
+Barcode: 9501100014245
+==================================================

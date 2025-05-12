@@ -1,0 +1,260 @@
+name: Chicken Kabsa
+ingredients: chicken, rice, tomato, onion, garlic, spices, dried lime, salt
+
+name: Maqluba
+ingredients: beef, eggplant, rice, potato, spices, onion
+
+name: Fattoush
+ingredients: lettuce, tomato, cucumber, parsley, pomegranate molasses, toasted bread, olive oil
+
+name: Hummus
+ingredients: chickpeas, tahini, lemon, garlic, olive oil
+
+name: Lentil Soup
+ingredients: lentils, carrot, onion, cumin, chicken broth, salt, oil
+
+name: Meat Stew
+ingredients: meat, potato, tomato, carrot, onion, garlic, spices
+
+name: Mansaf
+ingredients: yogurt, rice, lamb, shrak bread, almonds, pine nuts
+
+name: Mandi
+ingredients: lamb, rice, onion, charcoal, mandi spices
+
+name: Koshari
+ingredients: lentils, rice, pasta, tomato sauce, fried onions
+
+name: Molokhia
+ingredients: molokhia, chicken broth, garlic, coriander, oil
+
+name: سحناه
+ingredients: قاشع, خبز, ماء, سمن, ملح
+
+name: مجبوس دجاج
+ingredients: دجاج, بصل, ثوم, طماطم, أرز, لومي, بهارات, ملح, فلفل
+
+name: كبسة لحم
+ingredients: لحم, بصل, طماطم, بهارات الكبسة, أرز, لومي, ملح, فلفل أسود
+
+name: شوربة عدس
+ingredients: عدس, جزر, بطاطس, بصل, كمون, ملح, زيت, ماء
+
+name: معصوب
+ingredients: موز, خبز بر, قشطة, عسل, سكر, حليب
+
+name: سلطة تبولة
+ingredients: برغل, بقدونس, طماطم, بصل أخضر, نعناع, عصير ليمون, زيت زيتون, ملح
+
+name: قرصان
+ingredients: خبز قرصان, لحم مفروم, بصل, طماطم, كوسا, جزر, بهارات
+
+name: جريش
+ingredients: جريش, لبن, بصل, سمن, ملح, كمون
+
+name: مرقوقة
+ingredients: دقيق, بصل, لحم, كوسا, باذنجان, طماطم, بهارات, ماء
+
+name: كبدة اسكندراني
+ingredients: كبدة, ثوم, فلفل رومي, فلفل حار, خل, ملح, كمون, زيت
+
+name: بطاطس محمرة بالثوم
+ingredients: بطاطس, ثوم, زيت زيتون, ملح, كزبرة, فلفل أسود
+
+name: برياني دجاج
+ingredients: دجاج, أرز بسمتي, زبادي, بصل مقلي, زنجبيل, ثوم, بهارات برياني, زعفران, ملح
+
+name: مدفون لحم
+ingredients: لحم غنم, أرز, فحم, بصل, ثوم, بهارات مدفون, ملح, ماء
+
+name: مندي دجاج
+ingredients: دجاج, أرز, بصل, ثوم, بهارات مندي, فحم, ملح
+
+name: صيادية سمك
+ingredients: سمك, بصل, أرز, كمون, كركم, ليمون, زيت, ملح
+
+name: الملوخية المصرية
+ingredients: ملوخية, شوربة دجاج, ثوم, كزبرة ناشفة, سمن, ملح
+
+name: كشري مصري
+ingredients: عدس, أرز, مكرونة, حمص, صلصة طماطم, ثوم, خل, بصل مقلي
+
+name: فلافل
+ingredients: حمص, بقدونس, كزبرة, بصل, ثوم, كمون, كربونة, ملح, زيت للقلي
+
+name: المجدرة
+ingredients: عدس, أرز, بصل, زيت زيتون, ملح, كمون
+
+name: محشي كوسا
+ingredients: كوسا, أرز, لحم مفروم, بصل, طماطم, بهارات, نعناع, ملح
+
+name: ورق عنب
+ingredients: ورق عنب, أرز, بقدونس, نعناع, بصل, طماطم, عصير ليمون, زيت زيتون
+
+name: رز باللبن
+ingredients: أرز, حليب, سكر, ماء زهر, قرفة
+
+name: عصيدة
+ingredients: دقيق بر, ماء, سمن, عسل, ملح
+
+name: فتوش
+ingredients: خس, خيار, طماطم, بصل أخضر, نعناع, عصير ليمون, سماق, زيت زيتون, خبز محمص
+
+name: كبة مقلية
+ingredients: برغل, لحم مفروم, بصل, بهارات, ملح, زيت للقلي
+
+name: شاورما دجاج
+ingredients: دجاج, زبادي, ثوم, عصير ليمون, خل, بهارات شاورما, زيت, ملح
+
+name: طاجن بامية
+ingredients: بامية, لحم, بصل, طماطم, ثوم, بهارات, ملح, سمن
+
+name: مضروبة دجاج
+ingredients: دجاج, أرز, بصل, ثوم, طماطم, لومي, بهارات مشكلة, زيت, ملح
+
+name: جريش أحمر
+ingredients: جريش, طماطم, بصل, لحم, سمن, كمون, كزبرة, ملح
+
+name: كبدة اسكندراني
+ingredients: كبدة, ثوم, خل, فلفل حار, كمون, عصير ليمون, ملح
+
+name: طاجين مغربي بالبرقوق
+ingredients: لحم, برقوق, بصل, قرفة, سكر, زنجبيل, زيت الزيتون, سمسم
+
+name: مرقوقة
+ingredients: دقيق بر, لحم غنم, باذنجان, كوسا, طماطم, ثوم, بصل, بهارات, ماء
+
+name: فريك باللحم
+ingredients: فريك, لحم, سمنة, بصل, قرفة, ملح, فلفل
+
+name: مقلوبة فلسطينية
+ingredients: باذنجان, أرز, دجاج, طماطم, بطاطس, بهارات, ماء, ملح
+
+name: شوربة عدس
+ingredients: عدس أصفر, جزر, بصل, كمون, زيت, مرق دجاج, ملح
+
+name: رز بشعيرية
+ingredients: أرز, شعيرية, زيت, ملح, ماء
+
+name: بامية عراقية
+ingredients: بامية, لحم غنم, طماطم, معجون طماطم, ثوم, ملح, بهارات
+
+name: شكشوكة
+ingredients: بيض, طماطم, فلفل أخضر, بصل, زيت, ملح, فلفل أسود
+
+name: شية سودانية
+ingredients: لحم غنم مفروم, كمون, شطة, ثوم, ملح
+
+name: خبز مغربي (بطبوط)
+ingredients: دقيق, سميد, خميرة, ماء دافئ, ملح
+
+name: قلية يمنية
+ingredients: لحم مفروم, طماطم, ثوم, فلفل حار, بصل, ملح
+
+name: بنت الصحن
+ingredients: دقيق, بيض, سمن, خميرة, عسل, حبة سوداء
+
+name: رز بخاري
+ingredients: أرز, جزر, دجاج, ثوم, طماطم, بهارات بخاري, زبيب, ملح
+
+name: هريس
+ingredients: قمح مجروش, لحم, ملح, ماء
+
+name: مرقة سبانخ
+ingredients: سبانخ, لحم, طماطم, معجون طماطم, بصل, ثوم, ملح
+
+name: كوسا باللبن
+ingredients: كوسا, لحم مفروم, لبن زبادي, ثوم, نعناع, ملح
+
+name: محشي ورق ملفوف
+ingredients: ملفوف, أرز, لحم مفروم, طماطم, نعناع, ملح
+
+name: ليالي لبنان  
+ingredients: سميد ناعم, حليب, قشطة, ماء زهر, فستق حلبي, سكر
+
+name: عصيدة التمر  
+ingredients: تمر, دقيق, سمن, قرفة, ماء
+
+name: لقيمات مقرمشة  
+ingredients: دقيق, خميرة, سكر, زبادي, ماء دافئ, نشا, زيت للقلي, شيرة
+
+name: كنافة بالقشطة  
+ingredients: كنافة, سمن, قشطة, نشا, سكر, ماء ورد, فستق مطحون
+
+name: معمول تمر  
+ingredients: سميد, سمن, تمر, ماء زهر, قرفة, فستق (اختياري)
+
+name: بسبوسة  
+ingredients: سميد, جوز هند, سكر, لبن زبادي, بيكنج بودر, زيت, شيرة
+
+name: حلى الشعيرية الباكستانية  
+ingredients: شعيرية, قشطة, حليب مكثف, زبدة, فستق
+
+name: مهلبية  
+ingredients: حليب, نشا, سكر, ماء ورد, قرفة (للتزيين)
+
+name: قشطة بالحليب  
+ingredients: حليب, نشا, سكر, قشطة طازجة, فانيليا
+
+name: تمر محشي ومغطى بالشوكولاتة  
+ingredients: تمر, لوز أو فستق, شوكولاتة مذابة
+
+name: كرات التمر بجوز الهند  
+ingredients: تمر, جوز هند, سمن أو زبدة, قرفة
+
+name: حلى الزبادي  
+ingredients: بسكويت مطحون, زبدة, زبادي, سكر, حليب بودرة, فانيليا
+
+name: سمبوسة حلوة بالموز  
+ingredients: رقائق سمبوسة, موز, قرفة, سكر بني, زيت للقلي
+
+name: كاسات تشيز كيك سريعة  
+ingredients: بسكويت, زبدة, جبن كريمي, سكر بودرة, فانيليا, مربى
+
+name: أصابع التفاح بالقرفة  
+ingredients: تفاح مقطع, رقائق جلاش, قرفة, سكر, زبدة
+
+name: عصير الجوافة بالحليب  
+ingredients: جوافة, حليب, سكر, فانيليا, ثلج
+
+name: عصير البرتقال الطبيعي  
+ingredients: برتقال, سكر (اختياري), ثلج
+
+name: عصير الليمون بالنعناع  
+ingredients: ليمون, نعناع, سكر, ماء بارد, ثلج
+
+name: عصير المانجو  
+ingredients: مانجو, حليب أو ماء, سكر, ثلج
+
+name: عصير الأناناس  
+ingredients: أناناس طازج أو معلب, ماء بارد, سكر, ثلج
+
+name: عصير الفراولة بالحليب  
+ingredients: فراولة, حليب, سكر, فانيليا, ثلج
+
+name: كوكتيل الفواكه  
+ingredients: مانجو, فراولة, موز, حليب, عسل, ثلج
+
+name: عصير الرمان  
+ingredients: رمان, سكر, ماء, ثلج
+
+name: عصير الكيوي والموز  
+ingredients: كيوي, موز, لبن زبادي, عسل, ثلج
+
+name: عصير التمر بالحليب  
+ingredients: تمر منزوع النوى, حليب, قرفة (اختياري), ثلج
+
+name: عصير التفاح بالقرفة  
+ingredients: تفاح, ماء, قرفة مطحونة, سكر, ثلج
+
+name: سموثي التوت  
+ingredients: توت مشكل, زبادي, موز, عسل, ثلج
+
+name: عصير الشمام  
+ingredients: شمام, ماء بارد, عسل أو سكر, ثلج
+
+name: عصير البطيخ  
+ingredients: بطيخ, نعناع, سكر, ثلج
+
+name: عصير الخيار بالليمون  
+ingredients: خيار, ليمون, نعناع, ماء, ثلج

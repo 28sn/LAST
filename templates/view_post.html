@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>📸 تفاصيل المنشور</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 30px;
+      text-align: center;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    h1 {
+      color: #007acc;
+      margin-bottom: 20px;
+    }
+
+    .post-box {
+      max-width: 600px;
+      margin: auto;
+      background: var(--card-bg);
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      direction: rtl;
+      transition: background 0.3s;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+
+    .meta, .caption, .likes {
+      margin: 10px 0;
+      font-size: 15px;
+      color: var(--text-secondary);
+    }
+
+    .comments {
+      margin-top: 20px;
+      text-align: right;
+    }
+
+    .comments p {
+      background: rgba(0, 0, 0, 0.05);
+      padding: 8px 12px;
+      border-radius: 10px;
+      margin: 8px 0;
+      color: var(--text);
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 15px;
+      border: none;
+      border-radius: 8px;
+      background: #007acc;
+      color: white;
+      cursor: pointer;
+    }
+
+    .delete-btn {
+      background: #dc3545;
+      margin-top: 15px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 25px;
+      text-decoration: none;
+      color: #007acc;
+    }
+
+    :root {
+      --bg: #f4faff;
+      --text: #222;
+      --text-secondary: #555;
+      --card-bg: #ffffff;
+    }
+
+    body.dark {
+      --bg: #121212;
+      --text: #eee;
+      --text-secondary: #aaa;
+      --card-bg: #1e1e1e;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📸 تفاصيل المنشور</h1>
+
+  <div class="post-box">
+    <img src="{{ post.image }}" alt="image">
+    <div class="meta">👤 {{ post.username }} | 🕓 {{ post.timestamp[:10] }}</div>
+    <div class="caption">{{ post.caption }}</div>
+    <div class="likes">❤️ {{ post.likes }} إعجاب</div>
+
+    <form method="POST" action="/post/{{ post.id }}/comment">
+      <input type="text" name="comment" placeholder="💬 اكتب تعليقك هنا..." required>
+      <button type="submit">إرسال تعليق</button>
+    </form>
+
+    <form method="POST" action="/post/{{ post.id }}/like">
+      <button type="submit" style="background: #dc3545; margin-top: 10px;">❤️ إعجاب</button>
+    </form>
+
+    {% if current_user == post.username or current_role == "admin" %}
+    <form method="POST" action="/post/{{ post.id }}/delete">
+      <button type="submit" class="delete-btn">🗑 حذف المنشور</button>
+    </form>
+    {% endif %}
+
+    <div class="comments">
+      {% for comment in post.comments %}
+        <p>💬 <strong>{{ comment.author }}</strong>: {{ comment.text }}</p>
+      {% endfor %}
+    </div>
+  </div>
+  {% if current_user == post.username or current_role == 'admin' %}
+  <form method="POST" action="/post/{{ post.id }}/delete" onsubmit="return confirm('هل أنت متأكد من حذف المنشور؟');">
+    <button type="submit" style="background: #b02a37; margin-top: 10px;">🗑 حذف المنشور</button>
+  </form>
+{% endif %}
+  <a class="back-link" href="/view_posts">🔙 الرجوع للمنشورات</a>
+
+  <script>
+    const mode = localStorage.getItem("theme");
+    if (mode === "dark") document.getElementById("mainBody").classList.add("dark");
+
+  </script>
+
+</body>
+</html>

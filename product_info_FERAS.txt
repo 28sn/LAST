@@ -1,0 +1,16 @@
+Product Information:
+Product Name: AL BATAL
+Brand: Not available
+Ingredients: price 5
+Energy: Not available kcal
+Expiration Date: 2333-04-23
+Barcode: 6281016012483
+==================================================
+Product Information:
+Product Name: أرز
+Brand: شيبشي
+Ingredients: أرز
+Energy: 34
+Expiration Date: 1009-02-23
+Barcode: 6281007023535
+==================================================

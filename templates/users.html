@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>👥 المستخدمين</title>
+
+  <style>
+    body {
+      background: #f4faff;
+      color: #222;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 30px;
+      text-align: center;
+    }
+
+    body.dark {
+      background: #121212;
+      color: #eee;
+    }
+
+    h1 {
+      color: #007acc;
+      margin-bottom: 15px;
+    }
+
+    .summary {
+      font-size: 18px;
+      margin-bottom: 25px;
+      color: #444;
+    }
+
+    body.dark .summary {
+      color: #bbb;
+    }
+
+    .user-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .user-card {
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+      padding: 20px;
+      text-align: right;
+      direction: rtl;
+    }
+
+    body.dark .user-card {
+      background: #1e1e1e;
+    }
+
+    .user-card h2 {
+      margin: 0 0 15px;
+      color: #007acc;
+    }
+
+    .stat {
+      font-size: 16px;
+      margin: 8px 0;
+      color: #555;
+    }
+
+    body.dark .stat {
+      color: #ccc;
+    }
+
+    .delete-btn {
+      background: #dc3545;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 6px 10px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .delete-btn:hover {
+      background: #b52b39;
+    }
+
+    a.back {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 25px;
+      border-radius: 8px;
+      background: #007acc;
+      color: white;
+      text-decoration: none;
+    }
+
+    a.back:hover {
+      background: #005fa3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>👥 قائمة المستخدمين</h1>
+  <div class="summary" id="summaryInfo">📊 ...</div>
+
+  <div class="user-grid" id="userGrid">⏳ جاري تحميل المستخدمين...</div>
+
+  <a href="/" class="back">🏠 العودة للصفحة الرئيسية</a>
+
+  <script>
+    const theme = localStorage.getItem("theme") || "light";
+    if (theme === "dark") {
+      document.body.classList.add("dark");
+    }
+
+    let isAdmin = false;
+
+    fetch("/api/users_stats")
+      .then(res => res.json())
+      .then(data => {
+        const { users, current_user_role, total_users } = data;
+        isAdmin = current_user_role === "admin";
+
+        const grid = document.getElementById("userGrid");
+        const summary = document.getElementById("summaryInfo");
+
+        grid.innerHTML = "";
+        summary.innerText = `عدد المستخدمين: ${total_users} 👥`;
+
+        users.forEach(user => {
+          const card = document.createElement("div");
+          card.className = "user-card";
+
+          card.innerHTML = `
+            <h2>👤 ${user.username}</h2>
+            <div class="stat">📦 المنتجات: ${user.total_products}</div>
+            <div class="stat">🗑 منتهية الصلاحية: ${user.expired}</div>
+            <div class="stat">🔥 السعرات: ${user.total_calories} kcal</div>
+            <div class="stat">🔐 تسجيل الدخول: ${user.login_count} مرة</div>
+            <div class="stat">🟢 الحالة: ${user.online ? "متصل الآن" : "غير متصل"}</div>
+            <div class="stat">🏆 الأكثر استخدامًا: ${user.top_used || "لا شيء بعد"}</div>
+          `;
+
+          if (isAdmin && user.username !== "admin") {
+            const del = document.createElement("button");
+            del.className = "delete-btn";
+            del.innerText = "🗑 حذف";
+            del.onclick = () => deleteUser(user.username);
+            card.appendChild(del);
+          }
+
+          grid.appendChild(card);
+        });
+      });
+
+    function deleteUser(username) {
+      if (confirm("هل أنت متأكد من حذف المستخدم " + username + "?")) {
+        fetch("/api/delete_user", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ username })
+        })
+        .then(res => res.json())
+        .then(data => {
+          if (data.success) {
+            alert("✅ تم الحذف");
+            location.reload();
+          } else {
+            alert("❌ فشل الحذف: " + data.message);
+          }
+        });
+      }
+    }
+  </script>
+
+</body>
+</html>

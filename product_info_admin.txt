@@ -1,0 +1,16 @@
+Product Information:
+Product Name: أرز
+Brand: شيبشي
+Ingredients: 
+Energy: 189
+Expiration Date: 2027-02-02
+Barcode: 9009301000376
+==================================================
+Product Information:
+Product Name: شسي
+Brand: شسي
+Ingredients: 
+Energy: 
+Expiration Date: 2011-01-01
+Barcode: 6283700170042
+==================================================

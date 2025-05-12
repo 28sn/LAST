@@ -1,0 +1,16 @@
+[
+  {
+    "id": "d99c261d-379d-4567-a83a-725834d01c01",
+    "username": "AAA",
+    "image": "/static/uploads/5ed7e9b6e5284e98b68b7829b12ca169_ChatGPT_Image_May_6_2025_08_25_24_AM.png",
+    "caption": "SMART",
+    "likes": 2,
+    "comments": [
+      {
+        "author": "AAA",
+        "text": "DDD"
+      }
+    ],
+    "timestamp": "2025-05-10T11:10:15.314131"
+  }
+]

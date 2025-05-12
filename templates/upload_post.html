@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>📸 مشاركة صورة</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 30px;
+      text-align: center;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    h1 {
+      color: #007acc;
+      margin-bottom: 20px;
+    }
+
+    form {
+      background: var(--card-bg);
+      border-radius: 15px;
+      padding: 25px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    input[type="file"], textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      font-size: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      background: var(--input-bg);
+      color: var(--text);
+    }
+
+    button {
+      background: #007acc;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #005fa3;
+    }
+
+    a.back {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 25px;
+      border-radius: 8px;
+      background: #007acc;
+      color: white;
+      text-decoration: none;
+    }
+
+    a.back:hover {
+      background: #005fa3;
+    }
+
+    :root {
+      --bg: #f4faff;
+      --text: #222;
+      --card-bg: #ffffff;
+      --input-bg: #ffffff;
+    }
+
+    body.dark {
+      --bg: #121212;
+      --text: #f0f0f0;
+      --card-bg: #1e1e1e;
+      --input-bg: #2c2c2c;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📸 مشاركة منتج أو وصفة</h1>
+
+  <form method="POST" enctype="multipart/form-data">
+    <input type="file" name="image" accept="image/*" required>
+    <textarea name="caption" rows="4" placeholder="أضف تعليقًا أو وصفًا..."></textarea>
+    <button type="submit">نشر</button>
+  </form>
+
+  <a href="/" class="back">🏠 العودة للصفحة الرئيسية</a>
+
+  <script>
+    const mode = localStorage.getItem("theme_mode");
+    if (mode === "dark") document.body.classList.add("dark");
+  </script>
+
+</body>
+</html>
